@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mainframemodernizationadvisory/static/css/main.44995b08.css",
+    "main.js": "/mainframemodernizationadvisory/static/js/main.3069f721.js",
+    "index.html": "/mainframemodernizationadvisory/index.html",
+    "main.44995b08.css.map": "/mainframemodernizationadvisory/static/css/main.44995b08.css.map",
+    "main.3069f721.js.map": "/mainframemodernizationadvisory/static/js/main.3069f721.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.44995b08.css",
+    "static/js/main.3069f721.js"
+  ]
+}
