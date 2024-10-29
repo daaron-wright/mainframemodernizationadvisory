@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+import React, { useState } from 'react';
+import { ChevronLeft, ChevronRight, HelpCircle, Info, X } from 'lucide-react';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+import './index.css'; // Import Tailwind CSS
+
+const Card = ({ title, impact, isSelected, onClick, isBarrier }) => (
+  <div
+    onClick={onClick}
+    className={`p-4 rounded-lg cursor-pointer ${
+      isSelected
+        ? isBarrier 
+          ? 'bg-red-50 border-2 border-red-600'
+          : 'bg-emerald-50 border-2 border-emerald-600'
+        : 'bg-gray-50 hover:bg-gray-100'
+    }`}
+  >
+    <div className="font-medium">{title}</div>
+    <div className="text-sm text-gray-600">
+      Impact: {impact >= 0 ? '+' : ''}{impact}%
     </div>
-  );
-}
+  </div>
+);
 
-export default App;
+// ... (rest of your code)
